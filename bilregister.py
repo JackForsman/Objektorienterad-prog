@@ -45,7 +45,6 @@ c_car = Car('Toyota', 'Grön', 743)
 d_car = Car('Tesla', 'Gul', 2032)
 
 my_cars = [a_car, b_car, c_car, d_car]
-print(my_cars)
 a_car.get_brand()
 a_car.set_brand('Renault')
 a_car.get_brand()
@@ -53,3 +52,6 @@ b_car.get_brand
 print(a_car.color)
 the_mileage = a_car.get_mileage()
 print(the_mileage)
+
+for cars in my_cars:
+    print(cars.brand, cars.color, cars.mileage)
